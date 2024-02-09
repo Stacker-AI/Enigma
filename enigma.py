@@ -41,6 +41,3 @@ original_text = enigma_guard.defilter(filtered_text)
 print(f"Original Text: {text_with_pii}")
 print(f"Filtered Text: {filtered_text}")
 print(f"Original Text: {original_text}")
-
-print("atiq")
-print("Faisal Fida")

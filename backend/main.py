@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from dotenv import load_dotenv
+from fastapi.middleware.cors import CORSMiddleware
 from backend.enigma import enigma_guard
 
 load_dotenv()
@@ -8,6 +9,8 @@ load_dotenv()
 from backend.chat import send_prompt
 
 app = FastAPI()
+app.add_middleware(CORSMiddleware,allow_origins=['*'])
+
 
 @app.get("/")
 def read_root():

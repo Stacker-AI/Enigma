@@ -16,4 +16,4 @@ ENV LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
 ENV LANGCHAIN_API_KEY="ls__3115613626844e538e78f1a086ab960c"
 ENV LANGCHAIN_PROJECT="enigma_module"
 
-CMD ["python", "backend/main.py"]
+CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]

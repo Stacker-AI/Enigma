@@ -10,10 +10,5 @@ COPY . /app
 
 EXPOSE 8000
 
-ENV OPENAI_API_KEY="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"
-ENV LANGCHAIN_TRACING_V2=true
-ENV LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
-ENV LANGCHAIN_API_KEY="ls__3115613626844e538e78f1a086ab960c"
-ENV LANGCHAIN_PROJECT="enigma_module"
 
 CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]

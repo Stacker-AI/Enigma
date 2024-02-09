@@ -3,11 +3,9 @@
 The Enigma project will enhance the privacy and security by filtering personal information before sending it to the Langchain/OpenAI API. 
 
 ## Components
-The project comprises the following main components:
-
-1. **FastAPI Backend**
-2. **Angular Frontend**
-3. **Langchain/OpenAI API**
+- FastAPI Backend
+- Angular Frontend
+- Langchain/OpenAI API
 
 ## Setup
 
@@ -37,10 +35,3 @@ The project comprises the following main components:
     ```
 
 7. Access the application in your browser at `http://localhost:4200`.
-
-
-## Contributing
-Contributions to the Enigma project are welcome! Please fork the repository, make your changes, and submit a pull request.
-
-## License
-This project is licensed under the [MIT License](LICENSE).

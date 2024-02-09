@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot AI</title>
+</head>
+<body>
+
+    <div>
+        <label for="userInput">Enter your prompt:</label>
+        <input type="text" id="userInput" name="userInput" [(ngModel)]="userInput">
+        <button (click)="submitPrompt()">Submit</button>
+    </div>
+
+    <div>
+        <label for="promptDisplay">Prompt Text:</label>
+        <input type="text" id="promptDisplay" name="promptDisplay" readonly>{{userInput}}
+        <button onclick="anonymize()">Anonymize</button>
+    </div>
+
+    <button onclick="sendToChatGPT()">Send to ChatGPT</button>
+
+    <div>
+        <label for="responseDisplay">Response:</label>
+        <input type="text" id="responseDisplay" name="responseDisplay" readonly>
+        <button onclick="deanonymize()">Deanonymize</button>
+    </div>
+
+   
+</body>
+</html>

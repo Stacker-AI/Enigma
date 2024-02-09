@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from enigma import enigma_guard
 from dotenv import load_dotenv
+from backend.enigma import enigma_guard
 
 load_dotenv()
 
-from chat import send_prompt
+from backend.chat import send_prompt
 
 app = FastAPI()
 

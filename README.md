@@ -12,11 +12,9 @@ The Enigma project will enhance the privacy and security by filtering personal i
 1. Clone the repository from [GitHub](https://github.com/Stacker-AI/Enigma/)
 
 2. Install dependencies for both the backend and frontend. Navigate to the respective directories (`backend` and `frontend`) and run:
-   - Frontend
     ```
     npm install
     ```
-    - Backend
     ```
     pip install -r requirements.txt
     ```

@@ -1,2 +1,3 @@
 .venv
 .env
+\frontend\EnigmaFront\node_modules

@@ -2,6 +2,9 @@
 
 The Enigma project will enhance the privacy and security by filtering personal information before sending it to the Langchain/OpenAI API. 
 
+![Design_a_visually_appealing_poster_Enigma_Machin (1)](https://github.com/Stacker-AI/Enigma/assets/69955157/7ca21833-3a53-4c11-83c6-43c6f45b990b)
+
+
 ## Components
 - FastAPI Backend
 - Angular Frontend

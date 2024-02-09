@@ -2,7 +2,7 @@ import pytest
 from fastapi.testclient import TestClient
 from backend.main import app
 
-print("🚀 Testing the FastAPI backend!")
+print("🚀 Testing FastAPI backend!")
 
 
 @pytest.fixture(scope="module")

@@ -28,6 +28,11 @@ class EnigmaGuard:
 # Example Usage:
 enigma_guard = EnigmaGuard()
 enigma_guard.add_pattern("phone_number", r"(92\d{10}|03\d{9}|3\d{9})")
+enigma_guard.add_pattern("email", r"([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})")
+enigma_guard.add_pattern("name", r"([A-Z][a-z]+ [A-Z][a-z]+)")
+enigma_guard.add_pattern("address", r"(\d+ [A-Z][a-z]+ [A-Z][a-z]+)")
+enigma_guard.addd_pattern("cnic", r"(\d{5}-\d{7}-\d{1})")
+
 
 text_with_pii = "John Doe's phone number is 03211234567."
 filtered_text = enigma_guard.filter(text_with_pii)

@@ -26,7 +26,4 @@ def anonymyze(input_text: str):
     else:
         return {"anonymyzed_text": anonymyzed_text, "chat_response": chat_response, "deanonymyzed_text": "No Need to deanonymyzed!"}
 
-        
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+

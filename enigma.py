@@ -1,6 +1,6 @@
 import re
 
-class PIIFilter:
+class EnigmaGuard:
     def __init__(self):
         self.patterns = {}
         self.anonymization_mapping = {}
@@ -26,12 +26,12 @@ class PIIFilter:
         return defiltered_text
 
 # Example Usage:
-pii_filter = PIIFilter()
-pii_filter.add_pattern("phone_number", r"(92\d{10}|03\d{9}|3\d{9})")
+enigma_guard = EnigmaGuard()
+enigma_guard.add_pattern("phone_number", r"(92\d{10}|03\d{9}|3\d{9})")
 
 text_with_pii = "John Doe's phone number is 03211234567."
-filtered_text = pii_filter.filter(text_with_pii)
-original_text = pii_filter.defilter(filtered_text)
+filtered_text = enigma_guard.filter(text_with_pii)
+original_text = enigma_guard.defilter(filtered_text)
 
 print(f"Original Text: {text_with_pii}")
 print(f"Filtered Text: {filtered_text}")

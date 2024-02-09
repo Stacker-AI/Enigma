@@ -20,6 +20,8 @@ jobs:
         run: pip install -r requirements.txt
       - name: Install pytest
         run: pip install pytest
+      - name: Load the environment variables
+        run: export OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} && export LANGCHAIN_API_KEY=${{ secrets.LANGCHAIN_API_KEY }}
       - name: Run tests
         run: pytest
 

@@ -21,7 +21,7 @@ jobs:
         run: pip install -r requirements.txt
       - name: Install pytest
         run: pip install pytest
-      - name: Set up environment variables
+      - name: Set up environment variables and run tests
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           LANGCHAIN_API_KEY: ${{ secrets.LANGCHAIN_API_KEY }}
